@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/calculadora-toldos/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/calculadora-toldos/static/js/main.682dabf9.chunk.js",
-    "main.js.map": "/calculadora-toldos/static/js/main.682dabf9.chunk.js.map",
-    "runtime-main.js": "/calculadora-toldos/static/js/runtime-main.f7ba0443.js",
-    "runtime-main.js.map": "/calculadora-toldos/static/js/runtime-main.f7ba0443.js.map",
-    "static/js/2.e84d7690.chunk.js": "/calculadora-toldos/static/js/2.e84d7690.chunk.js",
-    "static/js/2.e84d7690.chunk.js.map": "/calculadora-toldos/static/js/2.e84d7690.chunk.js.map",
-    "static/js/3.21e9d02f.chunk.js": "/calculadora-toldos/static/js/3.21e9d02f.chunk.js",
-    "static/js/3.21e9d02f.chunk.js.map": "/calculadora-toldos/static/js/3.21e9d02f.chunk.js.map",
+    "main.js": "/calculadora-toldos/static/js/main.f0fa371f.chunk.js",
+    "main.js.map": "/calculadora-toldos/static/js/main.f0fa371f.chunk.js.map",
+    "runtime-main.js": "/calculadora-toldos/static/js/runtime-main.c6cd8237.js",
+    "runtime-main.js.map": "/calculadora-toldos/static/js/runtime-main.c6cd8237.js.map",
+    "static/js/2.a9a1a9de.chunk.js": "/calculadora-toldos/static/js/2.a9a1a9de.chunk.js",
+    "static/js/2.a9a1a9de.chunk.js.map": "/calculadora-toldos/static/js/2.a9a1a9de.chunk.js.map",
+    "static/js/3.876ecfb8.chunk.js": "/calculadora-toldos/static/js/3.876ecfb8.chunk.js",
+    "static/js/3.876ecfb8.chunk.js.map": "/calculadora-toldos/static/js/3.876ecfb8.chunk.js.map",
     "index.html": "/calculadora-toldos/index.html",
     "static/css/main.9d5b29c0.chunk.css.map": "/calculadora-toldos/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.e84d7690.chunk.js.LICENSE.txt": "/calculadora-toldos/static/js/2.e84d7690.chunk.js.LICENSE.txt",
+    "static/js/2.a9a1a9de.chunk.js.LICENSE.txt": "/calculadora-toldos/static/js/2.a9a1a9de.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/calculadora-toldos/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7ba0443.js",
-    "static/js/2.e84d7690.chunk.js",
+    "static/js/runtime-main.c6cd8237.js",
+    "static/js/2.a9a1a9de.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.682dabf9.chunk.js"
+    "static/js/main.f0fa371f.chunk.js"
   ]
 }
