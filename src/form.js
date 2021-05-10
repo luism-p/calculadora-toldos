@@ -2,7 +2,7 @@ import {useState} from "react";
 import Button from "@material-ui/core/Button";
 
 
-const Form = function (setDatos){
+const Form = function ({setDatos}){
     const [data, setData] = useState({name: '', aux: ''});
     const [nodes, setNodes] = useState({name: false, aux: false});
     const handleChange = (event) => {
@@ -10,11 +10,10 @@ const Form = function (setDatos){
         for (let nodesKey in nodes) {
             nodes[nodesKey] = nodesKey !== event.target.name && event.target.value;
         }
-        console.log(nodes);
     }
     const submit = (event) => {
         event.preventDefault();
-        setDatos(data)
+        setDatos(data);
 
     }
     return(
