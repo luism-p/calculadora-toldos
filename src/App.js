@@ -17,7 +17,7 @@ function App() {
                 <p>
                     Hola {datos.name}
                 </p>
-                <Form setDatos/>
+                <Form setDatos={this.setDatos}/>
 
             </header>
         </div>
