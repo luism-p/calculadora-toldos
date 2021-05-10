@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/calculadora-toldos/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/calculadora-toldos/static/js/main.f0fa371f.chunk.js",
-    "main.js.map": "/calculadora-toldos/static/js/main.f0fa371f.chunk.js.map",
-    "runtime-main.js": "/calculadora-toldos/static/js/runtime-main.c6cd8237.js",
-    "runtime-main.js.map": "/calculadora-toldos/static/js/runtime-main.c6cd8237.js.map",
-    "static/js/2.a9a1a9de.chunk.js": "/calculadora-toldos/static/js/2.a9a1a9de.chunk.js",
-    "static/js/2.a9a1a9de.chunk.js.map": "/calculadora-toldos/static/js/2.a9a1a9de.chunk.js.map",
-    "static/js/3.876ecfb8.chunk.js": "/calculadora-toldos/static/js/3.876ecfb8.chunk.js",
-    "static/js/3.876ecfb8.chunk.js.map": "/calculadora-toldos/static/js/3.876ecfb8.chunk.js.map",
+    "main.css": "/calculadora-toldos/static/css/main.3acb7f31.chunk.css",
+    "main.js": "/calculadora-toldos/static/js/main.ae6bddbf.chunk.js",
+    "main.js.map": "/calculadora-toldos/static/js/main.ae6bddbf.chunk.js.map",
+    "runtime-main.js": "/calculadora-toldos/static/js/runtime-main.0cda5e1c.js",
+    "runtime-main.js.map": "/calculadora-toldos/static/js/runtime-main.0cda5e1c.js.map",
+    "static/css/2.800be05e.chunk.css": "/calculadora-toldos/static/css/2.800be05e.chunk.css",
+    "static/js/2.eb6c153f.chunk.js": "/calculadora-toldos/static/js/2.eb6c153f.chunk.js",
+    "static/js/2.eb6c153f.chunk.js.map": "/calculadora-toldos/static/js/2.eb6c153f.chunk.js.map",
+    "static/js/3.ca93f440.chunk.js": "/calculadora-toldos/static/js/3.ca93f440.chunk.js",
+    "static/js/3.ca93f440.chunk.js.map": "/calculadora-toldos/static/js/3.ca93f440.chunk.js.map",
     "index.html": "/calculadora-toldos/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/calculadora-toldos/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.a9a1a9de.chunk.js.LICENSE.txt": "/calculadora-toldos/static/js/2.a9a1a9de.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/calculadora-toldos/static/media/logo.6ce24c58.svg"
+    "static/css/2.800be05e.chunk.css.map": "/calculadora-toldos/static/css/2.800be05e.chunk.css.map",
+    "static/css/main.3acb7f31.chunk.css.map": "/calculadora-toldos/static/css/main.3acb7f31.chunk.css.map",
+    "static/js/2.eb6c153f.chunk.js.LICENSE.txt": "/calculadora-toldos/static/js/2.eb6c153f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c6cd8237.js",
-    "static/js/2.a9a1a9de.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.f0fa371f.chunk.js"
+    "static/js/runtime-main.0cda5e1c.js",
+    "static/css/2.800be05e.chunk.css",
+    "static/js/2.eb6c153f.chunk.js",
+    "static/css/main.3acb7f31.chunk.css",
+    "static/js/main.ae6bddbf.chunk.js"
   ]
 }
