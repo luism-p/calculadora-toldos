@@ -2,7 +2,7 @@ import {useState} from "react";
 import Button from "@material-ui/core/Button";
 
 
-const Form = function (setDatos){
+const Form = function (props){
     const [data, setData] = useState({name: '', aux: ''});
     const [nodes, setNodes] = useState({name: false, aux: false});
     const handleChange = (event) => {
@@ -14,7 +14,7 @@ const Form = function (setDatos){
     }
     const submit = (event) => {
         event.preventDefault();
-        setDatos(data)
+        props.setDatos(data)
 
     }
     return(
