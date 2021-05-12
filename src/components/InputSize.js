@@ -1,13 +1,13 @@
 import React, {useState} from "react";
-import {Col, Form} from 'react-bootstrap';
-import './Cal.css';
+import {Form} from 'react-bootstrap';
+import '../css/InputSize.css';
 
 
-const Cal = function (props) {
-    const [nodes, setNodes] = useState({total: false, lona: false, enrolle: false, vuelo: false});
+const InputSize = function (props) {
+    const [nodes, setNodes] = useState({total: false, lona: false, enrolle: false, caracola: false, vuelo: false});
 
     const handleChange = (event) => {
-        props.setDatos({...props.data, [event.target.name]: event.target.value.trim()});
+        props.setDatos({...props.data, [event.target.name]: event.target.value.trim() || 0});
         for (let nodesKey in nodes) {
             nodes[nodesKey] = nodesKey !== event.target.name && event.target.value.trim();
         }
@@ -46,6 +46,16 @@ const Cal = function (props) {
                     />
                 </Form.Group>
                 <Form.Group className="m-3">
+                    <Form.Label>Caracola</Form.Label>
+                    <Form.Control
+                        name="caracola"
+                        type="number"
+                        placeholder="Caracola"
+                        onChange={handleChange}
+                        disabled={nodes.caracola}
+                    />
+                </Form.Group>
+                <Form.Group className="m-3">
                     <Form.Label>Vuelo</Form.Label>
                     <Form.Control
                         name="vuelo"
@@ -60,4 +70,4 @@ const Cal = function (props) {
     );
 }
 
-export default Cal;
+export default InputSize;
