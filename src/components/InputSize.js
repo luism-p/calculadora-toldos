@@ -3,11 +3,16 @@ import {Form} from 'react-bootstrap';
 import '../css/InputSize.css';
 
 
+
+
 const InputSize = function (props) {
+
     const [nodes, setNodes] = useState({total: false, lona: false, enrolle: false, caracola: false, vuelo: false});
 
     const handleChange = (event) => {
-        props.setDatos({...props.data, [event.target.name]: event.target.value.trim() || 0});
+        let calculo = props.runData("cofreGaviota", event.target.name, +event.target.value.trim() || 0);
+        console.log(calculo)
+        props.setDatos({...props.data, total : calculo.total, lona : calculo.lona, enrolle: calculo.enrolle, caracola : calculo.caracola, vuelo: calculo.vuelo});
         for (let nodesKey in nodes) {
             nodes[nodesKey] = nodesKey !== event.target.name && event.target.value.trim();
         }
