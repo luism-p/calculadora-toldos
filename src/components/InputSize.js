@@ -14,6 +14,7 @@ const InputSize = function (props) {
         caracola: true,
         vuelo: true
     });
+
     const handleChangeSelect = (event) => {
         const value = event.target.value;
         setTypeToldo(value);
@@ -23,8 +24,7 @@ const InputSize = function (props) {
             enrolle: false,
             caracola: false,
             vuelo: false
-        })
-
+        });
     }
 
     const handleChange = (event) => {
@@ -47,6 +47,7 @@ const InputSize = function (props) {
 
         setDisableSelect(value > 0);
     }
+
     return (
         <div className="form">
             <Form className="d-flex flex-column justify-content-around align-items-center" >
@@ -58,7 +59,7 @@ const InputSize = function (props) {
                                           disabled={isDisableSelect}
                             >
                                 <option key="default" disabled selected>Elige un tipo de toldo</option>
-                                {props.data.toldos.map( tol => <option key={tol}>{tol}</option>)}
+                                {props && props.config && Object.keys(props.config).map(key => <option value={key} key={key}>{props.config[key]['name']}</option>)}
                             </Form.Control>
                         </Form.Group>
 

@@ -1,9 +1,12 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import '../css/App.css';
 import InputSize from './InputSize';
 import Table from './Table';
-import Button from './Button';
+import Save from './Save';
+import firebase from "firebase/app";
+import 'firebase/database';
 
+import fireConfig from "../js/fireConfig";
 
 function App() {
     const [datos, setDatos] = useState({
@@ -12,8 +15,58 @@ function App() {
         enrolle: 0,
         caracola: 0,
         vuelo: 0,
-        toldos: ["cofreGaviota", "cofreBat"]
     });
+    const [config, setConfig] = useState({});
+    const [history, setHistory] = useState([]);
+
+    const initializeApp = () => {
+        if (!firebase.apps.length) {
+            try {
+                firebase.initializeApp(fireConfig)
+            } catch (err) {
+                console.error('Firebase initialization error raised', err.stack)
+            }
+        }
+    }
+
+    const loadConfig = () => {
+        const val = firebase.database().ref('config');
+        val.once('value').then((snapshot) => {
+            setConfig(snapshot.toJSON());
+        });
+    }
+
+    const saveData = (cliente) => {
+        const datosCopy = {...datos};
+        let ok = datosCopy && !Object.values(datosCopy).some(x => x <= 0);
+        if(ok && cliente){
+            datosCopy.cliente = cliente;
+            const val = firebase.database().ref('history');
+            val.push(datosCopy);
+        }
+
+    }
+
+    const loadData = () => {
+        const val = firebase.database().ref('history');
+        val.once('value').then((snapshot) => {
+            let arrayResult = [];
+            let result = snapshot.toJSON();
+            Object.keys(result).forEach(key => arrayResult.push(result[key]))
+
+            setHistory(arrayResult);
+        });
+    }
+
+
+    useEffect(() => {
+        initializeApp();
+        loadConfig();
+        loadData();
+
+    }, []);
+
+
     const data = {
         cofreGaviota: {
             total: {
@@ -50,25 +103,36 @@ function App() {
     }
 
     const runData = (toldo, name, valueIn) => {
-        console.log("runData");
-        console.log(toldo);
-        console.log(name);
-        console.log(valueIn);
-        let result = data[toldo][name];
-        Object.keys(result).forEach((key) => result[key] = valueIn > 0 ? result[key] + valueIn : 0);
+        let zero = {
+            total: 0,
+            lona: 0,
+            enrolle: 0,
+            caracola: 0,
+            vuelo: 0
+        }
+
+        let result = {...config[toldo][name]};
+        Object.keys(result).forEach((key) => {
+            if(valueIn > 0) {
+                result[key] = +result[key] + valueIn;
+            }else{
+                result = zero;
+            }
+        });
         return result;
     }
-    console.log(datos);
+
     return (
 
         <div className="App">
 
-            <InputSize setDatos={setDatos} data={datos} runData={runData}/>
+            <InputSize setDatos={setDatos} data={datos} runData={runData} config={config}/>
 
-            <Table className="table" total={datos.total} lona={datos.lona} enrolle={datos.enrolle}
+            <Table className="table" dynamic={false} total={datos.total} lona={datos.lona} enrolle={datos.enrolle}
                    caracola={datos.caracola} vuelo={datos.vuelo}/>
 
-            <Button/>
+            <Save saveData={saveData} loadData={loadData}/>
+            <Table className="table" dynamic={true} data={history}/>
 
         </div>
 

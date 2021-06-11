@@ -5,8 +5,6 @@
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 F
 calculadora-toldos.iml,3\5\35a3917f1f17036cb3aafdb66576ead6747167de
-F
-src/reportWebVitals.js,1\c\1ce5e63ae1582ed0b425c46001299a07515efbf9
 A
 public/robots.txt,d\a\dac799070c2d0c2fa24462b02c1f2dcc3fb3a1e9
 A
@@ -23,7 +21,3 @@ F
 src/test/setupTests.js,8\8\880a6f7cbd3b29f362904cde1373ba4b92112375
 A
 src/css/Table.css,5\1\5170c3cf4c9b26b7c9fe4c7aa5c9bbe1e34fd11f
-<
-package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
-A
-package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47

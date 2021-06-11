@@ -8,7 +8,7 @@ const Table = (props) => {
             <table className="table text-white">
                 <thead>
                 <tr>
-                    <th scope="col">#</th>
+                    <th scope="col"> {props.dynamic ? ("Cliente") : ("#")}</th>
                     <th scope="col">Total</th>
                     <th scope="col">Lona</th>
                     <th scope="col">Enrolle</th>
@@ -17,14 +17,29 @@ const Table = (props) => {
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>{props.total}</td>
-                    <td>{props.lona}</td>
-                    <td>{props.enrolle}</td>
-                    <td>{props.caracola}</td>
-                    <td>{props.vuelo}</td>
-                </tr>
+                {props.dynamic ? (
+                    props.data.map((dat) => (
+                        <tr>
+                            <td scope="row">{dat.cliente}</td>
+                            <td>{dat.total}</td>
+                            <td>{dat.lona}</td>
+                            <td>{dat.enrolle}</td>
+                            <td>{dat.caracola}</td>
+                            <td>{dat.vuelo}</td>
+                        </tr>
+                    ))
+                ) : (
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>{props.total}</td>
+                        <td>{props.lona}</td>
+                        <td>{props.enrolle}</td>
+                        <td>{props.caracola}</td>
+                        <td>{props.vuelo}</td>
+                    </tr>
+                )}
+
+
                 </tbody>
             </table>
         </div>
