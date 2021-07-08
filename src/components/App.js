@@ -56,7 +56,6 @@ function App() {
     }
 
     const loadData = () => {
-        setHistory([]);
         const val = firebase.database().ref('history');
         val.once('value').then((snapshot) => {
             let arrayResult = [];
