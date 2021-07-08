@@ -3,8 +3,6 @@
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-F
-calculadora-toldos.iml,3\5\35a3917f1f17036cb3aafdb66576ead6747167de
 A
 public/robots.txt,d\a\dac799070c2d0c2fa24462b02c1f2dcc3fb3a1e9
 A
@@ -21,3 +19,13 @@ F
 src/test/setupTests.js,8\8\880a6f7cbd3b29f362904cde1373ba4b92112375
 A
 src/css/Table.css,5\1\5170c3cf4c9b26b7c9fe4c7aa5c9bbe1e34fd11f
+?
+src/css/App.css,c\1\c1833813b5d1474c4f2c77c9a5352153364c2c8a
+F
+src/reportWebVitals.js,1\c\1ce5e63ae1582ed0b425c46001299a07515efbf9
+E
+src/css/InputSize.css,7\2\7210e86de59d154fca50b43888adb763fc9be6fe
+D
+src/js/fireConfig.js,e\0\e0561fc73e569b83ebffa1a3cd91953abffb2dbd
+<
+src/index.js,f\9\f900edc44cb929c2267a16100a32851f6d5b477d

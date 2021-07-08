@@ -9,7 +9,6 @@ export default (props) => {
     const [cliente, setCliente] = useState("");
 
     const handleClick = (event) => {
-        // alert("Aún no tiene funcionalidad");
         const element = document.getElementById('cliente');
 
         if (cliente) {

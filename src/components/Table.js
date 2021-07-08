@@ -1,5 +1,5 @@
-import React, {useState} from "react";
 import '../css/Table.css';
+import {Button} from "react-bootstrap";
 
 const Table = (props) => {
 
@@ -14,18 +14,20 @@ const Table = (props) => {
                     <th scope="col">Enrolle</th>
                     <th scope="col">Caracola</th>
                     <th scope="col">Vuelo</th>
+                    <th scope="col">Eliminar</th>
                 </tr>
                 </thead>
                 <tbody>
                 {props.dynamic ? (
                     props.data.map((dat) => (
                         <tr>
-                            <td scope="row">{dat.cliente}</td>
+                            <td>{dat.cliente}</td>
                             <td>{dat.total}</td>
                             <td>{dat.lona}</td>
                             <td>{dat.enrolle}</td>
                             <td>{dat.caracola}</td>
                             <td>{dat.vuelo}</td>
+                            <td><Button variant="danger" onClick={() => props.removeData(dat.id)}>X</Button></td>
                         </tr>
                     ))
                 ) : (
@@ -38,8 +40,6 @@ const Table = (props) => {
                         <td>{props.vuelo}</td>
                     </tr>
                 )}
-
-
                 </tbody>
             </table>
         </div>

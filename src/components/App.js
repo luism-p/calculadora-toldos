@@ -14,7 +14,7 @@ function App() {
         lona: 0,
         enrolle: 0,
         caracola: 0,
-        vuelo: 0,
+        vuelo: 0
     });
     const [config, setConfig] = useState({});
     const [history, setHistory] = useState([]);
@@ -39,12 +39,20 @@ function App() {
     const saveData = (cliente) => {
         const datosCopy = {...datos};
         let ok = datosCopy && !Object.values(datosCopy).some(x => x <= 0);
-        if(ok && cliente){
+        if (ok && cliente) {
             datosCopy.cliente = cliente;
             const val = firebase.database().ref('history');
             val.push(datosCopy);
         }
+    }
 
+    const removeData = (id) => {
+        if (id) {
+            const val = firebase.database().ref('history').child(id);
+            console.log(id)
+            console.log(val.key);
+            val.remove().then(() => loadData());
+        }
     }
 
     const loadData = () => {
@@ -52,8 +60,11 @@ function App() {
         val.once('value').then((snapshot) => {
             let arrayResult = [];
             let result = snapshot.toJSON();
-            Object.keys(result).forEach(key => arrayResult.push(result[key]))
-
+            result && Object.keys(result).forEach(key => {
+                let obj = result[key];
+                obj['id'] = key;
+                arrayResult.push(obj);
+            });
             setHistory(arrayResult);
         });
     }
@@ -113,9 +124,9 @@ function App() {
 
         let result = {...config[toldo][name]};
         Object.keys(result).forEach((key) => {
-            if(valueIn > 0) {
+            if (valueIn > 0) {
                 result[key] = +result[key] + valueIn;
-            }else{
+            } else {
                 result = zero;
             }
         });
@@ -128,11 +139,12 @@ function App() {
 
             <InputSize setDatos={setDatos} data={datos} runData={runData} config={config}/>
 
-            <Table className="table" dynamic={false} total={datos.total} lona={datos.lona} enrolle={datos.enrolle}
+            <Table className="table" dynamic={false} total={datos.total} lona={datos.lona}
+                   enrolle={datos.enrolle}
                    caracola={datos.caracola} vuelo={datos.vuelo}/>
 
             <Save saveData={saveData} loadData={loadData}/>
-            <Table className="table" dynamic={true} data={history}/>
+            <Table className="table" dynamic={true} data={history} removeData={removeData}/>
 
         </div>
 
