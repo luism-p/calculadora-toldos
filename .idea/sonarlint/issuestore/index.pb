@@ -17,8 +17,6 @@ C
 src/assets/logo.svg,5\c\5c78421908ac2b63fdf8bd6d449473e78c6ba703
 F
 src/test/setupTests.js,8\8\880a6f7cbd3b29f362904cde1373ba4b92112375
-A
-src/css/Table.css,5\1\5170c3cf4c9b26b7c9fe4c7aa5c9bbe1e34fd11f
 ?
 src/css/App.css,c\1\c1833813b5d1474c4f2c77c9a5352153364c2c8a
 F
