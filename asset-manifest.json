@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/calculadora-toldos/static/css/main.eec04d1f.chunk.css",
-    "main.js": "/calculadora-toldos/static/js/main.8d579167.chunk.js",
-    "main.js.map": "/calculadora-toldos/static/js/main.8d579167.chunk.js.map",
+    "main.js": "/calculadora-toldos/static/js/main.3419d5f5.chunk.js",
+    "main.js.map": "/calculadora-toldos/static/js/main.3419d5f5.chunk.js.map",
     "runtime-main.js": "/calculadora-toldos/static/js/runtime-main.c2d2a26c.js",
     "runtime-main.js.map": "/calculadora-toldos/static/js/runtime-main.c2d2a26c.js.map",
     "static/css/2.800be05e.chunk.css": "/calculadora-toldos/static/css/2.800be05e.chunk.css",
-    "static/js/2.bfe7ffbc.chunk.js": "/calculadora-toldos/static/js/2.bfe7ffbc.chunk.js",
-    "static/js/2.bfe7ffbc.chunk.js.map": "/calculadora-toldos/static/js/2.bfe7ffbc.chunk.js.map",
+    "static/js/2.549d121a.chunk.js": "/calculadora-toldos/static/js/2.549d121a.chunk.js",
+    "static/js/2.549d121a.chunk.js.map": "/calculadora-toldos/static/js/2.549d121a.chunk.js.map",
     "static/js/3.236886a1.chunk.js": "/calculadora-toldos/static/js/3.236886a1.chunk.js",
     "static/js/3.236886a1.chunk.js.map": "/calculadora-toldos/static/js/3.236886a1.chunk.js.map",
     "index.html": "/calculadora-toldos/index.html",
     "static/css/2.800be05e.chunk.css.map": "/calculadora-toldos/static/css/2.800be05e.chunk.css.map",
     "static/css/main.eec04d1f.chunk.css.map": "/calculadora-toldos/static/css/main.eec04d1f.chunk.css.map",
-    "static/js/2.bfe7ffbc.chunk.js.LICENSE.txt": "/calculadora-toldos/static/js/2.bfe7ffbc.chunk.js.LICENSE.txt"
+    "static/js/2.549d121a.chunk.js.LICENSE.txt": "/calculadora-toldos/static/js/2.549d121a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c2d2a26c.js",
     "static/css/2.800be05e.chunk.css",
-    "static/js/2.bfe7ffbc.chunk.js",
+    "static/js/2.549d121a.chunk.js",
     "static/css/main.eec04d1f.chunk.css",
-    "static/js/main.8d579167.chunk.js"
+    "static/js/main.3419d5f5.chunk.js"
   ]
 }
