@@ -27,3 +27,15 @@ D
 src/js/fireConfig.js,e\0\e0561fc73e569b83ebffa1a3cd91953abffb2dbd
 <
 src/index.js,f\9\f900edc44cb929c2267a16100a32851f6d5b477d
+K
+src/components/InputSize.js,a\b\abe5ba41912085e2c331dcfd22c0936d0372930b
+B
+src/css/Button.css,7\d\7dd7bca85981a6155eeba4069bcce6435da52a2c
+F
+calculadora-toldos.iml,3\5\35a3917f1f17036cb3aafdb66576ead6747167de
+<
+package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
+A
+package-lock.json,f\a\fa288d1472d29beccb489a676f68739ad365fc47
+A
+src/css/Table.css,5\1\5170c3cf4c9b26b7c9fe4c7aa5c9bbe1e34fd11f

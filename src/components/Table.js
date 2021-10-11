@@ -14,7 +14,8 @@ const Table = (props) => {
                     <th scope="col">Enrolle</th>
                     <th scope="col">Caracola</th>
                     <th scope="col">Vuelo</th>
-                    <th scope="col">Eliminar</th>
+                    {props.dynamic && <th scope="col">Eliminar</th>}
+
                 </tr>
                 </thead>
                 <tbody>
